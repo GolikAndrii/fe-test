@@ -1,0 +1,122 @@
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    width: 1250px;
+    height: 80px;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 3px 5px -2px rgba(0,0,0,0.3);
+
+}
+.header__button{
+    margin-left: 64px;
+}
+.header__search{
+    margin-right: 61px;
+}
+.button{
+    margin-right: 6px;
+    padding: 8px 14px;
+    background-color: #0271c7;
+    border-radius: 3px;
+    color: #ffffff;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+.header__search i{
+    margin-right: 6px;
+    color: #cccccc;
+}
+.header__search__input{
+    height: 27px;
+    border-radius: 3px;
+    font-size: 15px;
+
+    border: 1px solid #cccccc;
+    padding-left: 6px;
+}
+.header__search__input::-webkit-input-placeholder{
+    color: #d0d0d0;
+}
+.calendar-table{
+    width: 1130px;
+    margin-top: 10px;
+}
+.calendar-table_main-row td{
+    width: 6%;
+}
+.calendar-table_main-row td:nth-child(2){
+    width: 12%;
+    font-size: 21px;
+    font-family: sans-serif;
+    height: 40px;
+}
+.calendar-table_main-row i{
+    padding: 5px 8px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+.calendar-table_main-row button {
+    padding: 5px 8px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+.dayOfWeek{
+    border: 1px solid #cccccc;
+}
+.dayOfWeek td{
+    width: 14.28%;
+    border: 1px solid #cccccc;
+    height: 120px;
+}
+#calendar2{
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+
+
+
+
+
+
+
+
+
+
+#calendar2 {
+    width: 100%;
+    font: monospace;
+    line-height: 1.2em;
+    font-size: 15px;
+    text-align: center;
+}
+#calendar2 thead tr:last-child {
+    font-size: small;
+    color: rgb(85, 85, 85);
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(2) {
+    color: rgb(50, 50, 50);
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(1):hover, #calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
+    cursor: pointer;
+}
+#calendar2 tbody td {
+    color: rgb(44, 86, 122);
+}
+#calendar2 tbody td:nth-child(n+6), #calendar2 .holiday {
+    color: rgb(231, 140, 92);
+}
+#calendar2 tbody td.today {
+    background: rgb(220, 0, 0);
+    color: #fff;
+}
