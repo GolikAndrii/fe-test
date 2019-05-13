@@ -41,23 +41,20 @@ function Calendar2(id, year, month) {
 Calendar2("calendar2", new Date().getFullYear(), new Date().getMonth());
 
 function day2() {
-    var day2 = document.querySelectorAll('#calendar2 tbody td');
-    for (var i = 0; i < day2.length; i++) {
+    let day2 = document.querySelectorAll('#calendar2 tbody td');
+    for (let i = 0; i < day2.length; i++) {
 
         day2[i].onclick = function() {
-            let ttt = this.innerHTML + ' ' + parseFloat(parseFloat(this.parentNode.parentNode.parentNode.querySelector('thead td:nth-child(2)').dataset.month) + 1) + ' ' + this.parentNode.parentNode.parentNode.querySelector('thead td:nth-child(2)').dataset.year;
-            //document.querySelector('#rez').innerHTML = ttt;
+            let addLocalStorage = this.innerHTML + ' ' + parseFloat(parseFloat(this.parentNode.parentNode.parentNode.querySelector('thead td:nth-child(2)').dataset.month) + 1) + ' ' + this.parentNode.parentNode.parentNode.querySelector('thead td:nth-child(2)').dataset.year;
+            //document.querySelector('#rez').innerHTML = addLocalStorage;
 
-            localStorage.setItem(ttt,'Привет');
-
-
-
+            localStorage.setItem(addLocalStorage,'Привет');
+            document.querySelectorAll('#calendar2 tbody td').innerHTML = addLocalStorage;
         }
     }
 }
 
 /*
-
 
 
 
