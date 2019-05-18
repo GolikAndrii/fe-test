@@ -5,7 +5,7 @@
     align-items: center;
 }
 .header{
-    width: 1250px;
+    min-width: 95%;
     height: 80px;
     background-color: #f4f4f4;
     display: flex;
@@ -14,6 +14,7 @@
     box-shadow: 0 3px 5px -2px rgba(0,0,0,0.3);
 
 }
+
 .header__button{
     margin-left: 64px;
 }
@@ -29,6 +30,7 @@
     border: none;
     font-size: 15px;
     font-weight: 600;
+    box-shadow: 0 3px 5px -2px rgba(0,0,0,0.3);
 }
 .header__search i{
     margin-right: 6px;
@@ -45,15 +47,20 @@
 .header__search__input::-webkit-input-placeholder{
     color: #d0d0d0;
 }
+#today{
+    cursor: pointer;
+}
+
+
 .calendar-table{
-    width: 1130px;
+    width: 90%;
     margin-top: 10px;
 }
 .calendar-table_main-row td{
     width: 6%;
 }
 .calendar-table_main-row td:nth-child(2){
-    width: 12%;
+    min-width: 12%;
     font-size: 21px;
     font-family: sans-serif;
     height: 40px;
@@ -74,7 +81,7 @@
     border: 1px solid #cccccc;
 }
 .dayOfWeek td{
-    width: 14.28%;
+    min-width: 14.28%;
     border: 1px solid #cccccc;
     height: 120px;
 }
@@ -131,7 +138,7 @@
     background: #f4f4f4;
     color: #727272;
     font-weight: 600;
-    border: 2px solid #727272;
+    border: 2px solid #cccccc;
 }
 #calendar2 tbody td[title] {
     outline: 3px solid green;
@@ -140,4 +147,7 @@
 }
 #calendar2 tbody td[title] a {
     display: block;
+}
+.add-event{
+    background-color: #c2e4fe;
 }
